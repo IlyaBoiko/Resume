@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boiko Ilya</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="toggle" onclick="toggleMenu()"></div>
+    <section class="banner" id="home">
+        <div class="imgSideBar">
+            <img src="./img/Main-photo.jpg" alt="#">
+        </div>
+        <div class="content">
+            <h5 class="logoText">My_Resume</h5>
+            <div>
+                <h4><span>Hello</span>, I'm</h4>
+                <h2>Boiko Ilya</h2>
+                <h4>I'm a Front End Developer</h4>
+                <a href="#" class="btn">About Me</a>
+            </div>
+            <ul class="sci">
+                <li><a href="https://www.linkedin.com/in/%D0%B8%D0%BB%D1%8C%D1%8F-%D0%B1%D0%BE%D0%B9%D0%BA%D0%BE-0b6baa219"><img class="linkedin menu__img-hover" src="./img/linkedin.png" alt="#"></a></li>
+                <li><a href="https://instagram.com/ilya_boyko_00?utm_medium=copy_link"><img class=" menu__img-hover src=" src="./img/instagram.png" alt="#"></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="education" id="education">
+        <div class="title">
+            <h2>Education</h2>
+        </div>
+        <div class="education__content">
+            <div class="education__card">
+                <img src="./img/graduate.png" class="education__img" alt="#">
+                <h2 class="education__title">Vadim Getman <br>
+                    Kiev National <br>
+                    University of Economics</h2>
+                <p>Graduated in 2021.</p> 
+                <p>Bachelor's degree.</p>
+                <p>Specialty international economics.</p>
+            </div>
+            <div class="education__card">
+                <img src="./img/logo-itea.svg" class="education__img" alt="#">
+                <h2 class="education__title">IT Education Academy</h2>
+                <p>Junior Front End Developer</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="title white">
+            <h2>Skills</h2>
+        </div>
+        <div class="about-me__info-skills">
+            <ul class="about-me__info-skills__block">
+               <li class="about-me__info-skills__block-item html-css">HTML/CSS</li>
+               <li class="about-me__info-skills__block-item js">JS</li>
+               <li class="about-me__info-skills__block-item git">Git</li>
+               <li class="about-me__info-skills__block-item bem">BEM</li>
+            </ul>
+       </div>
+    </section>
+
+    <section class="work" id="work">
+        <div class="title">
+            <h2>Work</h2>
+        </div>
+        <div class="work__content">
+            <div class="work__img-wrap">
+                <div class="work__img">
+                    <a href="https://kholiavkoi.github.io/GarageService/"><img class="portfolio__img" src="./img/Portfolio.png" alt="#"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="title white">
+            <h2>Contact Me</h2>
+        </div>
+        <div class="contact__form">
+            <div class="contact__form-row">
+                <div class="col50">
+                    <input type="text" name="" placeholder="First Name">
+                </div>
+                <div class="col50">
+                    <input type="text" name="" placeholder="Last Name">
+                </div>
+            </div>
+            <div class="contact__form-row">
+                <div class="col50">
+                    <input type="email" name="" placeholder="Email">
+                </div>
+                <div class="col50">
+                    <input type="tel" name="" placeholder="Mobile">
+                </div>
+            </div>
+            <div class="contact__form-row">
+                <div class="col100">
+                    <textarea placeholder="Message"></textarea>
+                </div>
+            </div>
+            <div class="contact__form-row">
+                <div class="col100">
+                    <input type="submit" value="Send">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="copyright">
+        <p>© 2021 Boiko Ilya</p>
+    </div>
+
+    <div class="sidebar">
+        <ul class="menu">
+            <li><a class="menu-item" href="#home" onclick="toggleMenu()">Home</a></li>
+            <li><a class="menu-item"href="#education" onclick="toggleMenu()">Education</a></li>
+            <li><a class="menu-item"href="#skills" onclick="toggleMenu()">Skills</a></li>
+            <li><a class="menu-item"href="#work" onclick="toggleMenu()">Work</a></li>
+            <li><a class="menu-item"href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+    </div>
+
+
+
+
+
+    <script>
+        function toggleMenu() {
+            const menuToggle = document.querySelector('.toggle');
+            const sidebar = document.querySelector('.sidebar');
+            menuToggle.classList.toggle('active');
+            sidebar.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

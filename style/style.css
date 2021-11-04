@@ -1,0 +1,484 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.toggle {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background: #000 url(../img/menu.png);
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.toggle.active {
+    background: #000 url(../img/close.png);
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section {
+    padding: 100px;
+    min-height: 100vh;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.banner .imgSideBar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500px;
+    height: 100%;
+}
+
+.banner .imgSideBar img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner .content,
+.sidebar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(100% - 500px);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+.logoText {
+    position: absolute;
+    top: 40px;
+    left: 100px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: #333;
+    color: #fff;
+    padding: 0 5px;
+}
+
+.banner .content h4 {
+    font-size: 1.5em;
+    color: #333;
+    font-weight: 300;
+}
+
+.banner .content h4 span {
+    color: #00bcd4;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.banner .content h2 {
+    font-size: 3em;
+    color: #333;
+    line-height: 1em;
+}
+
+.banner .content p {
+    font-size: 1.1em;
+    margin: 20px 0;
+    font-weight: 300;
+}
+
+.btn {
+    background: #00bcd4;
+    color: #fff;
+    padding: 10px 30px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.sidebar {
+    position: fixed;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    padding: 40px;
+    z-index: 100;
+    right: -100%;
+}
+
+.sidebar.active {
+    right: 0;
+}
+
+.sidebar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sidebar ul li {
+    list-style: none;
+
+}
+
+.menu-item {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    margin: 10px 0;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.menu-item:hover {
+    color: #00bcd4;
+}
+
+.sci {
+    position: absolute;
+    left: 100px;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sci li {
+    margin-right: 10px;
+    list-style: none;
+}
+
+.sci li img {
+    transform: scale(0.5);
+    opacity: 0.8;
+}
+
+.sci li img {
+    transform: scale(0.5);
+    opacity: 0.7;
+}
+
+.menu__img-hover:hover {
+    opacity: 1;
+    transform: scale(0.6);
+    transition: 0.5s;
+}
+
+.linkedin {
+    width: 41px;
+    height: 41px;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.title h2 {
+    position: relative;
+    color: #00bcd4;
+    font-size: 1.8em;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.title h2::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+    width: 60px;
+    height: 4px;
+    background: #000;
+}
+
+.education .education__content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.education .education__content .education__card {
+    padding: 40px 20px;
+    max-width: 500px;
+    margin: 20px;
+    transition: 0.5s;
+    text-align: center;
+    background: #f5f5f5;
+}
+
+.education .education__content .education__card:hover {
+    background: #000;
+}
+
+.education__img {
+    width: 180px;
+    height: 180px;
+    max-width: 200px;
+    transition: 0.5s;
+}
+
+.education .education__content .education__card:hover img {
+    filter: invert(1);
+}
+
+.education__title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 23px;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.education .education__content .education__card:hover h2 {
+    color: #fff;
+}
+
+.education .education__content .education__card p {
+    margin: 0;
+    transition: 0.5s;
+    font-size: 18px;
+}
+
+.education .education__content .education__card:hover p {
+    color: #fff;
+}
+
+.skills {
+    background: #000;
+    color: #fff;
+}
+
+.about-me__info-skills {
+    margin-top: 50px;
+    position: relative;
+}
+  
+.about-me__info-skills__block {
+    margin: 20px auto 60px;
+    width: 500px;
+    list-style: none;
+}
+.about-me__info-skills__block-item {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #00bcd4;
+    position: relative;
+    padding-bottom: 10px;
+    cursor: pointer;
+    transition: ease-out 0.3s;
+}
+.about-me__info-skills__block-item:hover {
+    color: #00bcd4;
+    transform: scale(1.2);
+    margin-left: 24px;
+}
+  
+.about-me__info-skills__block-item:after {
+    content: "";
+    border-bottom: 3px solid #fff;
+    position: absolute;
+    width: 0;
+    transition: ease-out 0.3s;
+    left: 0;
+    bottom: -1px;
+}
+.about-me__info-skills__block-item.html-css::after {
+    width: 90%;
+}
+.about-me__info-skills__block-item.js::after {
+    width: 30%;
+}
+
+.about-me__info-skills__block-item.git::after {
+    width: 70%;
+}
+
+.about-me__info-skills__block-item.bem::after {
+    width: 80%;
+}
+  
+
+.portfolio__img {
+    max-width: 100%;
+}
+
+
+.contact {
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title.white h2 {
+    color: #fff;
+}
+
+.title.white p {
+    color: #fff;
+}
+
+.title.white h2::before {
+    background: #fff;
+}
+
+.contact .contact__form {
+    position: relative;
+    width: 700px;
+    margin-top: 20px;
+}
+
+.contact .contact__form .contact__form-row {
+    width: 100%;
+    display: flex;
+}
+
+.contact .contact__form .contact__form-row .col50 {
+    width: 50%;
+    margin: 10px;
+}
+
+.contact .contact__form .contact__form-row .col100 {
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+}
+
+.contact .contact__form .contact__form-row input,
+.contact .contact__form .contact__form-row textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: #111;
+    color: #fff;
+    font-size: 16px;
+    resize: none;
+}
+
+.contact .contact__form .contact__form-row textarea {
+    height: 100px;
+}
+
+.contact .contact__form .contact__form-row input[type="submit"] {
+    background: #00bcd4;
+    color: #fff;
+    padding: 10px 30px;
+    display: inline-block;
+    font-weight: 500;
+    letter-spacing: 2px;
+    cursor: pointer;
+    max-width: 150px;
+}
+
+.copyright {
+    color: #fff;
+    background: #111;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+@media(max-width:991px) {
+    section {
+        padding: 40px;
+    }
+    
+    .banner .imgSideBar {
+        display: none;
+    }
+
+    .banner .content,
+    .sidebar {
+        width: 100%;
+        padding: 40px;
+    }
+
+    .logoText {
+        left: 40px;
+    }
+
+    .toggle {
+        right: 40px;
+    }
+
+    .about-me__info-skills__block {
+        width: 100%;
+    }
+
+    .sci {
+        left: 40px;
+    }
+
+    .contact .contact__form {
+        width: 100%;
+    }
+
+    .contact__form .contact__form-row {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .contact .contact__form .contact__form-row .col50 {
+        width: 100%;
+    }
+
+    .sidebar ul li a {
+        font-size: 1.5em;
+    }
+}
+
+@media(max-width:500px) {
+    
+    section {
+        padding: 30px;
+    }
+
+    .about-me__info-skills__block {
+        width: 100%;
+    }
+    
+    .education__img {
+        max-width: 140px;
+        width: 140px;
+        height: 140px;
+    }
+
+    .toggle {
+        right: 20px;
+    }
+}
