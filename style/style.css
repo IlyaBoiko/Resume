@@ -176,6 +176,11 @@ section {
     transition: 0.5s;
 }
 
+.phone {
+    width: 41px;
+    height: 41px;
+}
+
 .linkedin {
     width: 41px;
     height: 41px;
@@ -302,7 +307,7 @@ section {
     width: 90%;
 }
 .about-me__info-skills__block-item.js::after {
-    width: 30%;
+    width: 55%;
 }
 
 .about-me__info-skills__block-item.git::after {
@@ -312,11 +317,68 @@ section {
 .about-me__info-skills__block-item.bem::after {
     width: 80%;
 }
-  
 
-.portfolio__img {
-    max-width: 100%;
+.about-me__info-skills__block-item.scss::after {
+    width: 90%;
 }
+
+.about-me__info-skills__block-item.figma::after {
+    width: 80%;
+}
+
+.work .work__content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.work .work__content .work__card {
+    position: relative;
+    width: 265px;
+    height: 265px;
+    margin: 10px;
+    transition: 0.5s;
+    text-align: center;
+}
+.work .work__content .work__card .work__img,
+.work .work__content .work__card .work__text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.work .work__content .work__card .work__img .portfolio__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.work .work__content .work__card .work__text {
+    background-color: #000;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.work .work__content .work__card:hover .work__text {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.work .work__content .work__card .work__text h4 {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
 
 
 .contact {
