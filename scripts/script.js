@@ -40,9 +40,3 @@ linkHeroes.addEventListener('click', function(e) {
     window.open('https://ilyaboiko.github.io/Heroes/');
 })
 
-let linkFurniture = document.querySelector('.furniture');
-
-linkFurniture.addEventListener('click', function(e) {
-    e.preventDefault();
-    window.open('https://ilyaboiko.github.io/Furniture/');
-})
