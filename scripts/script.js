@@ -54,4 +54,9 @@ linkSpace.addEventListener('click', function(e) {
     window.open('https://ilyaboiko.github.io/Space/');
 })
 
+let linkCollection = document.querySelector('.collection');
 
+linkSpace.addEventListener('click', function(e) {
+    e.preventDefault();
+    window.open('https://ilyaboiko.github.io/Collection/');
+})
