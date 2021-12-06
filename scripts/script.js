@@ -40,3 +40,10 @@ linkHeroes.addEventListener('click', function(e) {
     window.open('https://ilyaboiko.github.io/Heroes/');
 })
 
+let linkShop = document.querySelector('.shop');
+
+linkShop.addEventListener('click', function(e) {
+    e.preventDefault();
+    window.open('https://ilyaboiko.github.io/Shop/');
+})
+

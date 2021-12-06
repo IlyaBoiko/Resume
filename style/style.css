@@ -326,6 +326,14 @@ section {
     width: 80%;
 }
 
+.about-me__info-skills__block-item.bootstrap::after {
+    width: 55%;
+}
+
+.about-me__info-skills__block-item.gulp::after {
+    width: 75%;
+}
+
 .work .work__content {
     display: flex;
     justify-content: center;
