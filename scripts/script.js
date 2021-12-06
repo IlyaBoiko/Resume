@@ -47,3 +47,11 @@ linkShop.addEventListener('click', function(e) {
     window.open('https://ilyaboiko.github.io/Shop/');
 })
 
+let linkSpace = document.querySelector('.space');
+
+linkSpace.addEventListener('click', function(e) {
+    e.preventDefault();
+    window.open('https://ilyaboiko.github.io/Space/');
+})
+
+
