@@ -323,11 +323,11 @@ section {
 }
 
 .about-me__info-skills__block-item.figma::after {
-    width: 80%;
+    width: 90%;
 }
 
 .about-me__info-skills__block-item.bootstrap::after {
-    width: 55%;
+    width: 85%;
 }
 
 .about-me__info-skills__block-item.gulp::after {
@@ -335,6 +335,15 @@ section {
 }
 
 .about-me__info-skills__block-item.jquery::after {
+    width: 80%;
+}
+.about-me__info-skills__block-item.MySQL::after {
+    width: 40%;
+}
+.about-me__info-skills__block-item.Smarty::after {
+    width: 60%;
+}
+.about-me__info-skills__block-item.Wordpress::after {
     width: 70%;
 }
 
